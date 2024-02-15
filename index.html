@@ -5,47 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Booking Project</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            cursor: pointer; /* Add cursor style to indicate it's clickable */
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        h1:hover {
-            text-decoration: underline; /* Add underline on hover */
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
 
-    <header id="websiteLink">
-        <h1>Visit our website by clicking HERE</h1>
+    <header>
+        <h1 id="websiteLink">Visit our website by clicking HERE</h1>
     </header>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Booking with Barber: Easily schedule appointments with your preferred barber.</li>
+            <li>Sign In and Sign Up: Securely create an account or log in to manage your bookings.</li>
+            <li>View All Appointments: Access a comprehensive list of all your scheduled appointments.</li>
+            <li>Comments and Opinions: Share your thoughts, comments, and opinions about your experiences.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to contact us:</p>
+        <ul>
+            <li>Email: your.email@example.com</li>
+            <li>GitHub (Elbatouri Rabi): <a href="https://github.com/elbatouri">elbatouri</a></li>
+            <li>GitHub (Mohamed Reda): <a href="https://github.com/RedaMjibel">RedaMjibel</a></li>
+        </ul>
+    </section>
 
     <footer>
         <p>&copy; 2024 Barber Booking Project. All rights reserved.</p>
@@ -54,7 +39,7 @@
     <script>
         // Add an event listener to the header element to navigate to the website on click
         document.getElementById('websiteLink').addEventListener('click', function() {
-            window.location.href = 'http://boroda.elclubourirabi.tech';
+            window.location.href = 'https://boroda.elclubourirabi.tech';
         });
     </script>
 
