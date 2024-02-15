@@ -13,23 +13,51 @@
         }
 
         header {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #3498db;
-            color: #fff;
+            position: relative;
             text-align: center;
-            cursor: pointer; /* Add cursor style to indicate it's clickable */
+            color: #fff;
+            background-color: #3498db;
+            padding: 50px 20px; /* Adjust padding as needed */
         }
 
         h1 {
             margin: 0;
-            color: #fff; /* Text color */
-            text-decoration: none; /* Remove default text underline */
+            font-size: 3em;
         }
 
-        h1:hover {
-            text-decoration: underline; /* Add underline on hover */
+        p {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
         }
 
         footer {
@@ -41,32 +69,108 @@
             bottom: 0;
             width: 100%;
         }
+
+        .feature {
+            margin-top: 40px;
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd; /* Add border to images (optional) */
+            border-radius: 4px; /* Optional rounded corners for images */
+        }
+
+        .about {
+            margin-top: 40px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
 
-    <header id="websiteLink">
-        <h1 onclick="window.location.href='https://boroda.elclubourirabi.tech';">Visit our website by clicking HERE</h1>
+    <header>
+        <h1 id="websiteLink" onclick="window.location.href='https://boroda.elclubourirabi.tech';">Barber Booking Project</h1>
+        <p>Streamlining the process of booking appointments with barbers</p>
     </header>
 
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button onclick="window.location.href='https://boroda.elclubourirabi.tech';">Explore the Project</button>
+
+    <!-- Feature Section -->
     <section id="features">
         <h2>Key Features</h2>
-        <ul>
-            <li>Booking with Barber: Easily schedule appointments with your preferred barber.</li>
-            <li>Sign In and Sign Up: Securely create an account or log in to manage your bookings.</li>
-            <li>View All Appointments: Access a comprehensive list of all your scheduled appointments.</li>
-            <li>Comments and Opinions: Share your thoughts, comments, and opinions about your experiences.</li>
-        </ul>
+
+        <!-- Feature 1 -->
+        <div class="feature">
+            <img src="/static/images/book with barber feater.png" alt="Feature 1 Image">
+            <h3>Feature 1 : booking</h3>
+            <p>Description of Feature 1</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature">
+            <img src="/static/images/booking list feater.jpg" alt="Feature 2 Image">
+            <h3>Feature 2 : bookings list</h3>
+            <p>Description of Feature 2</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature">
+            <img src="/static/images/comment feater.png" alt="Feature 3 Image">
+            <h3>Feature 3 : comment</h3>
+            <p>Description of Feature 3</p>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or need assistance, feel free to contact us:</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>This project was inspired by the difficulties of booking appointments with my barber through phone calls. It became challenging for both me and my barber to manage all the bookings efficiently.</p>
+        <p>The project started in [timeline]. It is a Portfolio Project for Holberton School. [Link to Holberton Portfolio Project].</p>
+
+        <h3>Team Members</h3>
         <ul>
-            <li>Email: elbatouri@gmail.com</li>
-            <li>GitHub (Elbatouri Rabi): <a href="https://github.com/elbatouri">elbatouri</a></li>
-            <li>GitHub (Mohamed Reda): <a href="https://github.com/RedaMjibel">RedaMjibel</a></li>
+            <li><a href="https://www.linkedin.com/in/elbatourirabi/>LinkedIn - Elbatouri Rabi</a></li>
+            <li><a href="https://github.com/elbatouri">GitHub - elbatouri</a></li>
+     
         </ul>
+
+        <ul>
+            
+            <li><a href="https://github.com/RedaMjibel">GitHub - RedaMjibel</a></li>
+        
+        </ul>
+
+        <h3>GitHub Repository</h3>
+        <p><a href="https://github.com/elbatouri/Barbershop_webapp_portfolio">Barber Booking Project Repository</a></p>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="about">
+        <h2>Project Overview Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9tzQy1KBaV0?si=t0jLMsr859g_0l8i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </section>
 
     <footer>
